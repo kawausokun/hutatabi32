@@ -1,0 +1,8 @@
+div {
+    background-color: pink;
+}
+@media screen and (orientation: portrait) {
+    div {
+        background-color: yellow;
+    }
+}
