@@ -1,0 +1,11 @@
+@media print {
+    body {
+        color: #00ff00;
+    }
+}
+
+@media screen {
+    body {
+        color: #ff0000;
+    }
+}
