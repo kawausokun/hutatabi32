@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="manifest" href="manifest.json">
     <title>べんきょうサイトです</title>
 </head>
 
@@ -25,7 +26,7 @@
     <h1>WebGL</h1>
     <a href="gl.html">ウェブGLを使い、画面の一部を赤いゾーンで初期化</a>
     <h1>WebRTC(skywayを利用)</h1>
-    <a href=""></a>
+    <a href="tensor1210.html">テンソルフロー写経</a>
     <h1>TensorFlow</h1>
     <a href=""></a>
     <h1>PWA(プログレッシブウェブアプリ) </h1>
@@ -34,6 +35,17 @@
     <a href=""></a>
     <h1>そのほか</h1>
     <a href="vr.html">お勉強立体図形(つっかい棒あり)</a>
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/service-worker.js').then(function(registration) {
+                // 登録成功
+                console.log('ServiceWorker の登録に成功しました。スコープ: ', registration.scope);
+            }).catch(function(err) {
+                // 登録失敗
+                console.log('ServiceWorker の登録に失敗しました。', err);
+            });
+        }
+    </script>
 </body>
 
 </html>

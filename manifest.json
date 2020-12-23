@@ -1,0 +1,14 @@
+{
+    "name": "あまびえ３２",
+    "short_name": "あまびえ３２",
+    "description": "あまびえPWA体験です",
+    "icons": [{
+        "src": "pwatest.png",
+        "sizes": "192x192",
+        "type": "image/png"
+    }],
+    "start_url": "/path/to/index.html",
+    "display": "fullscreen",
+    "theme_color": "#dff0d8",
+    "background_color": "#dff0d8"
+}
