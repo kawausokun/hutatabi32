@@ -35,26 +35,9 @@
     <h1>ハイブリッドアプリケーション</h1>
     <a href=""></a>
     <h1>そのほか</h1>
+    <a href="puzzle2.html">写真パズル</a>
     <a href="vr.html">お勉強立体図形(つっかい棒あり)</a>
-    <script>
-        if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('sw.js').then(function(registration) {
-                // 登録成功
-                console.log('ServiceWorker の登録に成功しました。スコープ: ', registration.scope);
-            }).catch(function(err) {
-                // 登録失敗
-                console.log('ServiceWorker の登録に失敗しました。', err);
-            });
-        }
-    </script>
-    <script>
-        // This is the "Offline page" service worker
 
-        // Add this below content to your HTML page inside a <script type="module">
-    </script> tag, or add the js file to your page at the very top to register service worker // If you get an error about not being able to import, double check that you have type="module" on your
-    <script /> tag /* This code uses the pwa-update web component https://github.com/pwa-builder/pwa-update to register your service worker, tell the user when there is an update available and let the user know when your PWA is ready to use offline. */ import 'https://cdn.jsdelivr.net/npm/@pwabuilder/pwaupdate';
-    const el = document.createElement('pwa-update'); document.body.appendChild(el);
-    </script>
 </body>
 
 </html>
